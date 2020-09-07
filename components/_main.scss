@@ -4,32 +4,49 @@ main {
     font-family: 'Poppins', sans-serif;
     h1{
         font-weight: 700;
+        color: #d7b94c;
+        font-family: 'Inconsolata', Consolas, monospace;
     }
     h2, h4{
         text-align: center;
         font-weight: 300;
     }
-    h3{
-        margin-top: 25px;
-    }
+    
     hr{
         width: 100%;
         background-color: #FFFF;
         height: 1px;
         border: 1px solid #585d65;
+        
     }
     section{
         margin-top: 3%;
         padding: 20px;
     }
     p{
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        float: left;
+    span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: gray;
+        width: 100%;
+        border-left: .1em solid transparent;
+        animation: typing 3s steps(12) forwards,
+                             cursor 1s infinite;
     }
-    
+    }  
 }
 
-#wrap {
-    @media (min-width:1220px){
-        display: none;
-    }
+/* Animation */
+@keyframes typing{
+	from { width: 100%;}
+	to { width: 0;}
 }
+@keyframes cursor{
+	50% { border-color: white;}
+}
+
