@@ -11,18 +11,23 @@
 
 <body>
     <header tabindex="0">
-        <i class="fas fa-bars"></i>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i></a></li>
-                <li><a href="#about"><i class="fas fa-user-alt"></i></a></li>
-                <li><a href="#services"><i class="fas fa-laptop-code"></i></a></li>
-                <li><a href="#skills"><i class="fas fa-tools"></i></a></li>
-                <li><a href="#work"><i class="fas fa-suitcase"></i></a></li>
-                <li><a href="#contact"><i class="fas fa-envelope-open"></i></a></li>
-                 
-            </ul>
-        </nav>
+        <nav>
+            <div class="menu">
+                <input class="button" type="checkbox" id="checkbox" />
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#about"><i class="fas fa-user-alt"></i></a></li>
+                    <li><a href="#services"><i class="fas fa-laptop-code"></i></a></li>
+                    <li><a href="#skills"><i class="fas fa-tools"></i></a></li>
+                    <li><a href="#work"><i class="fas fa-suitcase"></i></a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope-open"></i></a></li>
+                </ul>
+            </div>
+        </nav>    
+   
     </header>
 
     <main>
@@ -32,7 +37,7 @@
                     <span>Hey, there!</span>
                     <h1>I'm Andrea Juarez</h1><br>
                    
-                    <div class="wrapper">
+                    <div>
                         <p>Programmer_<span>&nbsp;</span>
                         </p><br><br>
                         <p>Software Tester_<span>&nbsp;</span>
@@ -43,50 +48,68 @@
                     <a class="btn" href="#about">More about me</a>
                 </div>
         </section>
-        <hr class="division">
+    <hr class="division">
 
-<div class="break">
+    <div class="flex-container">
 
     <section id="about">
-        <h2>About me</h2>
-        <h4>my story</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quisquam ipsa iure unde, perferendis porro aspernatur. 
-            Explicabo maiores, optio eum ipsam, iusto amet expedita distinctio 
-            error a vitae, praesentium debitis et.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quisquam ipsa iure unde, perferendis porro aspernatur. 
-            Explicabo maiores, optio eum ipsam, iusto amet expedita distinctio 
-            error a vitae, praesentium debitis et.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quisquam ipsa iure unde, perferendis porro aspernatur. 
-            Explicabo maiores, optio eum ipsam, iusto amet expedita distinctio 
-            error a vitae, praesentium debitis et.</p>
-            
+        <div class="flex-components">
+
+            <div class="paragraph">
+                <h2>About me</h2>
+                <h4>my story</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quisquam ipsa iure unde, perferendis porro aspernatur. 
+                    Explicabo maiores, optio eum ipsam, iusto amet expedita distinctio 
+                    error a vitae, praesentium debitis et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quisquam ipsa iure unde, perferendis porro aspernatur. 
+                    Explicabo maiores, optio eum ipsam, iusto amet expedita distinctio 
+                    error a vitae, praesentium debitis et.</p>
+            </div>
+
+            <div>
+                <img class="flex-images" src="images/about-me.jpeg" alt="coffee and book under the table">
+            </div>
+
+        </div>
     </section>
 
     <hr class="division">
 
     <section id="services">
-        <h2>Services</h2>
-        <h4>What I do</h4>
+        <div class="flex-components">
 
-        <img src="icons/coding.png" alt="code icon">
-        <h3>Web development</h3>
-        <p>In addition, I make your site interactive, 
-            because it is important that people can be close to all that makes you unique.</p>
+            <div class="paragraph second-item">
+                <h2>Services</h2>
+                <h4>What I do</h4><br>
 
-        <img src="icons/design.png" alt="desing icon">
-        <h3>Web design</h3>
-        <p>I design the website you've always dreamed of. 
-            We create together that space that identifies you so that you can make yourself known to the world.</p>
-           
-        <img src="icons/test.png" alt="test icon">    
-        <h3>Web testing</h3>
-        <p>Finally, you can relax and leave in my hands the maintenance and proper functioning of your site.</p>
+               
+                <h3>Web development</h3>
+                <p>In addition, I make your site interactive, 
+                    because it is important that people can be close to all that makes you unique.</p> 
+
+                
+                <h3>Web design</h3>
+                <p>I design the website you've always dreamed of. 
+                    We create together that space that identifies you so that you can make yourself known to the world.</p>
+                
+                    
+                <h3>Web testing</h3>
+                <p>Finally, you can relax and leave in my hands the maintenance and proper functioning of your site.</p>
+            </div>
+
+             <div>
+                <img class="flex-images second-item" src="images/services.jpeg" alt="a person using a laptop">
+            </div>
+      
+
+         </div>
     </section>
 
 </div>
+
+
 
     <hr class="division">
 
@@ -94,40 +117,56 @@
             <h2>Coding Skills</h2>
             <h4>developing on</h4>
 
-            <h3>HTML5, CSS3</h3>
-            <div class="progress-bar">
-            <div class="percentage one">90%</div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+            <div class="flex-components">
 
-            <h3>JavaScirpt</h3>
-            <div class="progress-bar">
-                <div class="percentage two">50%</div>
+                <div>
+                    <h3>HTML5, CSS3</h3>
+                    <div class="progress-bar">
+                    <div class="percentage one">90%</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
                 </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
 
-            <h3>Git, GitHub</h3>
-            <div class="progress-bar">
-                <div class="percentage three">80%</div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+            
+                <div>
+                    <h3>JavaScirpt</h3>
+                    <div class="progress-bar">
+                        <div class="percentage two">50%</div>
+                        </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+                </div>
 
-            <h3>SQL, MySQL</h3>
-            <div class="progress-bar">
-                    <div class="percentage four">40%</div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
-
-            <h3>Selenium Web Driver</h3>
-            <div class="progress-bar">
-                <div class="percentage one">90%</div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+                <div>
+                    <h3>Git, GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="percentage three">80%</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+                </div>
+               
+             
+                <div>
+                    <h3>SQL, MySQL</h3>
+                    <div class="progress-bar">
+                            <div class="percentage four">40%</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+                </div>
+                
+                <div>
+                    <h3>Selenium Web Driver</h3>
+                    <div class="progress-bar">
+                        <div class="percentage one">90%</div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam ipsa iure unde, perferendis porro aspernatur.</p>
+                </div>
+                
+        </div>
             
         </section>
 
@@ -136,32 +175,51 @@
         <section id="work">
             <h2>Portfolio</h2>
             <h4>Latest work</h4>
+            <div class="flex-container">
+                <div class="flex-components">
 
-            <div class="container">
-                <img src="images/Product-Landing-Page.png" alt="East&West landing page" class="image">
-                <div class="middle">
-                  <div class="text"><a href="https://asj-code.github.io/Product-Landing-Page/" target="_blank">Product Landing Page</a></div>
-                </div>
-            </div>
+        
+            
+                    <div class="container">
+                        <div>
+                            <img src="images/Product-Landing-Page.png" alt="East&West landing page" class="image">
+                        </div>
+                       
+                        <div class="middle">
+                        <div class="text"><a href="https://asj-code.github.io/Product-Landing-Page/" target="_blank">Product Landing Page</a></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <img src="images/Tech-Event.png" alt="Tech Event page" class="image">
+                        </div>
+                        
+                        <div class="middle">
+                        <div class="text"><a href="https://asj-code.github.io/WomenWhoCode-EventPage/" target="_blank">Tech Event page</a></div>
+                        </div>
+                    </div>
 
-            <div class="container">
-                <img src="images/Tech-Event.png" alt="Tech Event page" class="image">
-                <div class="middle">
-                  <div class="text"><a href="https://asj-code.github.io/WomenWhoCode-EventPage/" target="_blank">Tech Event page</a></div>
-                </div>
-            </div>
 
-            <div class="container">
-                <img src="images/Meeting-Site.png" alt="Meeting site" class="image">
-                <div class="middle">
-                  <div class="text"><a href="https://asj-code.github.io/TinDog.Bootstrap/" target="_blank">Meeting site</a></div>
-                </div>
-            </div>
+                    <div class="container">
+                        <div >
+                            <img src="images/Meeting-Site.png" alt="Meeting site" class="image">
+                        </div>
+                        
+                        <div class="middle">
+                        <div class="text"><a href="https://asj-code.github.io/TinDog.Bootstrap/" target="_blank">Meeting site</a></div>
+                        </div>
+                    </div>
 
-            <div class="container">
-                <img src="images/Fan-Page.png" alt="Fan page" class="image">
-                <div class="middle">
-                  <div class="text"><a href="https://asj-code.github.io/Artist-LandingPage/" target="_blank">Fan page</a></div>
+
+                    <div class="container">
+                        <div>
+                            <img src="images/Fan-Page.png" alt="Fan page" class="image">
+                        </div>
+                       
+                        <div class="middle">
+                        <div class="text"><a href="https://asj-code.github.io/Artist-LandingPage/" target="_blank">Fan page</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -171,6 +229,9 @@
         <section id="contact">
             <h2>Contact</h2>
             <h4>Let's talk</h4>
+            <div class="flex-container">
+
+           
 
             <form action="#" method="POST" class="formularios">
                 <span>Registrate:</span><br><br>
@@ -190,7 +251,10 @@
                             <button class="btn" type="submit">Enviar</button>
                         </div>
                     </form>
+
+                </div>
         </section>
+    </div>
         <hr class="division">
         <footer>
             <a href="https://www.linkedin.com/in/andrea-juarez-1792b7a2/"><i class="fab fa-linkedin"></i></a>
