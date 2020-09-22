@@ -21,11 +21,12 @@ header {
 .menu {
     @media screen and (min-width:1220px){
         padding: 20px 10px;
-        display: inline-block;
+        display: block;
         width: 10%;
         position: absolute;
         left: 5px;
         top: 40px;
+
         .fas{
             font-size: 25px;
             margin-top: 30px;
@@ -33,6 +34,7 @@ header {
             &:hover {
                 color: white;
             }
+           
             }
         }
         ul {
@@ -42,8 +44,8 @@ header {
             left:10px;
             overflow: hidden;
             list-style: none;
-            background: black;
-            height: 0px;
+            background: grey;
+            height: 0;
             @media screen and (min-width: 1220px){
                 position: relative;
                 top: 20px;
@@ -90,7 +92,7 @@ header {
     height: 2.5px;
     margin-bottom: 6.5px;
     position: relative;
-    background: #000;
+    background: gray;
     z-index: 1;
     transform-origin: 3px 0px;
     transition: transform 0.5s ease,
