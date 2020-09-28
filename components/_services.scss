@@ -8,7 +8,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
     p {
-        padding-left: 50px;
-        margin-right: 20px;
+        padding-left: 70px;
+        margin-right: 40px;
     }
+}
+
+.fas, .far {
+    color: #d7b94c;
+    font-size: 30px;
+    margin-right: 20px;
 }

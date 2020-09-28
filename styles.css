@@ -15,7 +15,7 @@ header section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 20px 10px black;
+  box-shadow: 0 0 20px 10px grey;
   border-radius: 50%;
 }
 @media screen and (min-width: 1220px) {
@@ -43,6 +43,7 @@ header section img {
 
 .description {
   text-align: left;
+  font-size: 20px;
 }
 
 .btn {
@@ -79,8 +80,8 @@ header section img {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-#skills h3 {
-  margin-top: 20px;
+#skills h2 {
+  margin-top: 50px;
 }
 #skills img {
   color: white;
@@ -93,7 +94,7 @@ header section img {
 }
 
 .icon-image {
-  width: 200px;
+  width: 150px;
   height: 100px;
 }
 
@@ -101,51 +102,13 @@ header section img {
   margin-right: 20px;
 }
 
-/* .progress-bar{
-    height: 23px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: white;
-
-}
-
-.percentage{
-    height: 20px;
-    background-color: gray;
-    width: 90%;
-    padding-left: 80%; 
-    border-radius: 10px; 
-
-}
-
-.two{
-    width: 50%;
-    padding-left: 40%;
-}
-.three{
-    width: 80%;
-    padding-left: 70%;
-}
-.four{
-    width: 40%;
-    padding-left: 30%;
-}
-.five {
-    width: 70%;
-    padding-left: 50%;
-}
-.six {
-    width: 100%;
-    padding-left: 0;
-}
-*/
-@media screen and (min-width: 1220px) {
-  .flex-skills-container {
+@media screen and (min-width: 769px) {
+  .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
   }
 }
+
 #work .container {
   margin-top: 30px;
   position: relative;
@@ -218,7 +181,13 @@ header section img {
   }
 }
 #services p {
-  padding-left: 50px;
+  padding-left: 70px;
+  margin-right: 40px;
+}
+
+.fas, .far {
+  color: #d7b94c;
+  font-size: 30px;
   margin-right: 20px;
 }
 
