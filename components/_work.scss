@@ -53,10 +53,17 @@
               color: black;
           }
       }
-    }
-   
-    
-    
-    
+    }   
 }
+
+.work-container {
+  margin: 50px 0;
+  @media screen and (min-width: 769px){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
 
