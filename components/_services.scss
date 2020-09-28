@@ -2,15 +2,19 @@
     width: 100%;
     height: 50%;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     @media screen and (min-width: 769px){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        p {
+            padding-left: 70px;
+            margin-right: 40px;
+        }
     }
     p {
-        padding-left: 70px;
-        margin-right: 40px;
+        padding-top: 15px;
     }
+    
 }
 
 .fas, .far {
